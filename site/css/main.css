@@ -18,11 +18,6 @@ textarea {
     color: #222;
 }
 
-html {
-    font-size: 1em;
-    line-height: 1.4;
-}
-
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -301,4 +296,153 @@ textarea {
     h3 {
         page-break-after: avoid;
     }
+}
+
+
+/* My Code */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 62.5%; /* transforma a fonte para a base 10px */
+    background-color: #fff;
+}
+
+p {
+    margin: 0;
+    color: #111;
+}
+
+nav#menu-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #161619;
+    color: #fff;
+    padding: 20px 0;
+}
+nav#menu-nav .me {
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+nav#menu-nav .photo {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+nav#menu-nav .photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+nav#menu-nav h1.name {
+    text-align: center;
+    font-size: 2.7em;
+    font-weight: 700;
+}
+nav#menu-nav h2.jobTitle {
+    font-size: 1.8em;
+    font-weight: 300;
+    text-align: center;
+}
+
+nav#menu-nav .navigation {
+    width: 100%;
+    margin-bottom: 40px;
+}
+nav#menu-nav .navigation a {
+    display: block;
+    width: 100%;
+    line-height: 36px;
+    color: #fff;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+    padding-left: 20px;
+    outline: none;
+
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    transition: all linear 0.4s;
+}
+nav#menu-nav .navigation a:hover,
+nav#menu-nav .navigation a.active {
+    background-color: #fff;
+    color: #161619;
+}
+
+nav#menu-nav .contact {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+nav#menu-nav .contact a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+#main {
+    float: left;
+    margin-left: 330px;
+    padding: 40px 40px 40px 0; 
+}
+
+#main section {
+    margin-bottom: 40px;
+}
+#main section h2 {
+    font-size: 2em;
+    color: #161619;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#main section h3 {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+#main section p {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+#main section ul {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+#main section ul li {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+
+
+#portfolio {
+    width: 90%;
+}
+#portfolio .port {
+    display: block;
+    float: left;
+    width: 33.33333%;
+    margin-bottom: 40px;
 }
